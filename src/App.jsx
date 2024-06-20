@@ -26,10 +26,10 @@ const App = () => {
   const [state,dispatch]=useReducer(reducer,0);
 
   const handleAdd=() => {
-    dispatch({type:"increase"})
+    dispatch({type:"increase",payload:2})
   }
   const handleSub=() => {
-    dispatch({type:"decrease"})
+    dispatch({type:"decrease",payload:2})
   }
   return (
     <div>
